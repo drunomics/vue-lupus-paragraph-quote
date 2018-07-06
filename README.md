@@ -1,4 +1,4 @@
-# vue-lupus-paragrpah-quote
+# vue-lupus-paragraph-quote
 Vue slider component.
 
 
