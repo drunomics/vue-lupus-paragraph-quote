@@ -20,12 +20,12 @@ Vue.component('pg-quote', PgQuote);
 ## Properties
 You can pass the following props:
 
-- `field-text` ( string )
+- `data-field-text` ( string )
   The quote's text.
 
 ## Example
 ```
 <pg-quote
-  field-text="Quote"
+  data-field-text="Quote"
 >
 ```

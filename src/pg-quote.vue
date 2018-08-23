@@ -1,8 +1,6 @@
 <template>
   <div class="paragraph paragraph--quote">
-    <div class="paragraph__field-quote">
-      {{ fieldText }}
-      <slot/>
+    <div class="paragraph__field-quote" v-html="fieldText">
     </div>
   </div>
 </template>
@@ -10,7 +8,12 @@
   export default {
     name: 'PgQuote',
     props: {
-      fieldText: { type: String, default: () => '' },
+      dataFieldText: { type: String, default: () => '' },
+    },
+    computed: {
+      fieldText() {
+        return JSON.parse(this.dataFieldText);
+      },
     },
   };
 </script>
