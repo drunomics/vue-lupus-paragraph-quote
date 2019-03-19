@@ -1,3 +1,5 @@
-import PgQuote from './pg-quote.vue';
+import PgQuote from './pg-quote.vue'
 
-export { PgQuote };
+export { PgQuote }
+
+export default PgQuote
