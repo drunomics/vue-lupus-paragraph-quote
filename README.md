@@ -12,20 +12,26 @@ via npm:
 import it:
 
 ```
-import { PgQuote } from 'vue-lupus-paragraph-quote';
+import PgQuote from 'vue-lupus-paragraph-quote';
 
 Vue.component('pg-quote', PgQuote);
 ```
 
-## Properties
-You can pass the following props:
+## Slots
+You can use the following slots
 
-- `data-field-text` ( string )
-  The quote's text.
+- `title` ( optional )
+  A title.
+- `content` ( default )
+  All other content.
+- `author` ( optional )
+  Quote author.
 
 ## Example
 ```
-<pg-quote
-  data-field-text="Quote"
->
+<paragraph-quote>
+  <h1 slot="title">Title</h1>
+  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+  <span slot="author">Quote author</span>
+</paragraph-quote>
 ```
