@@ -20,7 +20,7 @@
   </div>
 </template>
 <script>
-  export default {
-    name: 'PgQuote'
-  };
+export default {
+  name: 'PgQuote'
+}
 </script>
