@@ -1,5 +1,5 @@
 # vue-lupus-paragraph-quote
-Vue slider component.
+Vue quote component.
 
 
 
